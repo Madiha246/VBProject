@@ -21,7 +21,7 @@
 							<suiteXmlFiles>
 								<!-- Provide the path to your testng.xml
 								relative to the project root -->
-								<suiteXmlFile>SmokeSuite.xml</suiteXmlFile>
+								<suiteXmlFile>smokesuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -30,7 +30,7 @@
 
 		</profile>
 		<profile>
-			<id>RT</id>
+			<id>INT</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -41,7 +41,7 @@
 							<suiteXmlFiles>
 								<!-- Provide the path to your testng.xml
 								relative to the project root -->
-								<suiteXmlFile>RegressionSuite.xml</suiteXmlFile>
+								<suiteXmlFile>IntegrationSuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -51,7 +51,7 @@
 		</profile>
 		
 		<profile>
-			<id>RRT</id>
+			<id>SYT</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -62,7 +62,7 @@
 							<suiteXmlFiles>
 								<!-- Provide the path to your testng.xml
 								relative to the project root -->
-								<suiteXmlFile>RegionalRegression.xml</suiteXmlFile>
+								<suiteXmlFile>SystemSuite.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
