@@ -23,7 +23,8 @@ public class ListenerImplementation implements ITestListener, ISuiteListener {
 	
 	public void onStart(ISuite suite) {
 		System.out.println("========Report Configuration========");
-		ExtentSparkReporter spark=new ExtentSparkReporter("C:\\Users\\muthahir\\git\\vblocal\\Banking_Project\\AdvancedReports");
+		String time=new Date().toString().replace(" ", "_").replace(":", "_");
+		ExtentSparkReporter spark=new ExtentSparkReporter("C:\\Users\\muthahir\\git\\vblocal\\Banking_Project\\AdvancedReport\\report_"+time+".html");
 		spark.config().setDocumentTitle("VB Bank");
 		spark.config().setReportName("VB Report");
 		spark.config().setTheme(Theme.DARK);

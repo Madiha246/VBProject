@@ -3,12 +3,14 @@ package com.vb.qa.smoke;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.vb.qa.basetest.BaseClass;
 import com.vb.qa.elementrepository.HomePage;
 import com.vb.qa.elementrepository.TransferPage;
 
+@Listeners(com.vb.qa.listenerutility.ListenerImplementation.class)
 public class TransferTest extends BaseClass {
 	
 	@Test(groups= {"Smoke Test"})

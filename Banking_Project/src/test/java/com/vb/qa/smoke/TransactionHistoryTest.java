@@ -1,12 +1,14 @@
 package com.vb.qa.smoke;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.vb.qa.basetest.BaseClass;
 import com.vb.qa.elementrepository.HistoryPage;
 import com.vb.qa.elementrepository.HomePage;
 
+@Listeners(com.vb.qa.listenerutility.ListenerImplementation.class)
 public class TransactionHistoryTest extends BaseClass {
 	
 	
